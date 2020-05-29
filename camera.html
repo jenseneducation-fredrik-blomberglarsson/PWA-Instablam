@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <title>Instablam!</title>
+</head>
+
+<body>
+  <div id="cameraWrapper">
+    <header>
+      <h1 class="header">Instablam!</h1>
+    </header>
+    <section class="camera">
+      <video id="me" class="camera"></video>
+    </section>
+    <button id="addImage" class="button">Ta en bild!</button>
+    <div id="filters">
+      <input type="range" id="brightness-slider" min="-100" max="100" value="0">Brightness</input>
+      <span id="brightness-value"></span>
+      <input type="range" id="vibrance-slider" min="-100" max="100" value="0">Vibrance</input>
+      <span id="vibrance-value"></span>
+      <input type="range" id="contrast-slider" min="-100" max="100" value="0">Contrast</input>
+      <span id="contrast-value"></span>
+      <input type="range" id="saturation-slider" min="-100" max="100" value="0">Saturation</input>
+      <span id="saturation-value"></span>
+      <input type="range" id="sharpen-slider" min="0" max="100" value="0">Sharpen</input>
+      <span id="sharpen-value"></span>
+      <input type="range" id="noise-slider" min="0" max="100" value="0">Noise</input>
+      <span id="noise-value"></span>
+    </div>
+    <img src="" id="photo" />
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
